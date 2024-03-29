@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    font-family: 'Lucida Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.wildcat{
+    
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgba(145, 145, 247, 0.499), rgba(42, 3, 238, 0.856));
+    color:#fff
+    position relative;
+}
+
+.container{
+
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(249, 247, 247, 0.877);
+    border-radius: 10px;
+}
+
+.clock{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(60px);
+}
+.clock span{
+
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.clock span::after{
+
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#hrs::after{
+    content: 'Hours';
+}
+#min::after{
+    content: 'Minutes';
+}
+#sec::after{
+    content: 'Seconds';
+}
