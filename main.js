@@ -12,9 +12,10 @@ setInterval(()=>{
 
 setTimeout(function(){
     let alarmTime = document.getElementById("alarmTime");
-     
+    alert("Wake Up!") 
 })
 
 setAlarmBtn.addEventListener('click', () =>{
-    
+    let selectedAlarmTime = `${selectAlarm[0].value}:${selectAlarm[1].vaule}`
+    alarmTime = selectedAlarmTime
 })
